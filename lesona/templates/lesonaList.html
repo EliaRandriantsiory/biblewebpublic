@@ -1,0 +1,18 @@
+{% extends 'lesonaHome.html' %}
+{% block lesonaContent %}
+
+    {% for title in titreLesona %}
+    <a href="{% url 'viewContentLesona' title %}">{{title}}</a>
+     <div>
+        {% for subtitle in soustitre %}
+        {% if subtitle.titre == title %}
+        <a href="{% url 'viewContentLesona' subtitle %}">
+            <li>{{subtitle}}</li>
+        </a>
+
+        {% endif %}
+        {% endfor %}
+
+    </div>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'lesonaHome.html' %}
+{% block lesonaContent %}
+
+<form method="post" style="align-items: center; padding: 15px;">
+    {% csrf_token %}
+    
+    {% if etat == True %}
+    <div class="title">
+        <h4>{{title}} </h4>
+      
+    </div>
+    <div class="content">
+      <div><label for="soustitre">Sous titre : </label></div>
+    <textarea name="soustitre" class="text_area" cols="70" rows="1"style="
+    
+    resize: vertical; border: 2px solid #ccc;
+    
+    font-family: 'Arial', sans-serif;
+    
+    font-size: 18px;
+    
+"></textarea></div>
+    {% endif %}
+    <div class="title">
+        <a href="{% url 'viewContentLesona' title.titre %}"><h4>{{title.titre}} </h4></a>
+        <h4>{{title}} </h4>
+      
+    </div>
+    <div class="fanazavana">
+        <div><label for="tokoSyAndininy">Toko sy andininy : </label></div>
+        <textarea name="tokoSyAndininy" class="text_area" cols="70" rows="1"style="
+    
+    resize: vertical; border: 2px solid #ccc;
+    
+    font-family: 'Arial', sans-serif;
+    
+    font-size: 18px;
+    
+"></textarea>
+        <div><label for="soustitreContent">Fanazavana : </label></div>
+        <textarea name="soustitreContent" class="text_area" cols="70" rows="7"style="
+    
+    resize: vertical; border: 2px solid #ccc;
+    
+    font-family: 'Arial', sans-serif;
+    
+    font-size: 18px;
+    
+"></textarea></div>
+    </div>
+
+    
+    <input type="submit" value="Soumettre">
+  </form>
+{% endblock %}

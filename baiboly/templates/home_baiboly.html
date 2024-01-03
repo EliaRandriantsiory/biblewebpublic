@@ -1,0 +1,32 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="content">
+    <div class="content-header" style="margin-bottom: 10px;">
+        <button>Ancien testament</button>
+        <button>Nouveau testament</button>
+    </div>
+    <div class="content-description">
+        
+        <form method="post">
+            {% csrf_token %}
+            <label for="boky">Boky:</label>
+            
+                <select name="boky" id="boky">
+                    {% for bible in bibles %}
+                        {% if bible.chpt %}
+                        <option value="{{bible.bbl_m}}">{{bible.bbl_m}}</option>  
+                        {% endif %}
+                        
+                    {% endfor %}
+                </select>
+    
+            <label for="toko">toko :</label><input type="text" id="toko" name="toko">
+            <label for="andininy">andininy :</label><input type="text" id="andininy" name="andininy">
+            <input type="submit" value="Parcourir">
+        </form>
+    </div>
+    
+    {% block content_view %}
+    {% endblock %}
+</div>
+{% endblock %}

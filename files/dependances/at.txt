@@ -1,0 +1,39 @@
+Genesisy	Genèse
+Eksodosy	Exode
+Levitikosy	Lévitique
+Nomery	Nombres
+Deotoronomia	Deutéronome
+Josoa	Josué
+Mpitsara	Juges
+Rota	Ruth
+ISamoela	1 Samuel
+IISamoela	2 Samuel
+IMpanjaka	1 Rois
+IIMpanjaka	2 Rois
+ITantara	1 Chroniques
+IITantara	2 Chroniques
+Ezra	Esdras
+Nehemia	Néhémie
+Estera	Esther
+Joba	Job
+Salamo	Psaumes
+Ohabolana	Proverbes
+Mpitoriteny	Ecclésiaste
+Tononkira	Cantique des Cantiques
+Isaia	Ésaïe
+Jeremia	Jérémie
+Fitomaniana	Lamentations
+Ezekiela	Ézéchiel
+Daniela	Daniel
+Hosea	Osée
+Joela	Joël
+Amosa	Amos
+Obadia	Abdias
+Jona	Jonas
+Mika	Michée
+Nahoma	Nahum
+Habakoka	Habacuc
+Zefania	Sophonie
+Hagay	Aggée
+Zakaria	Zacharie
+Malakia	Malachie

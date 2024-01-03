@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% block content %}
+<div class="content">
+    <div class="content-header">
+        <button><a href="{% url 'fihirana_1_list' %}">FIHIRANA VOALOHANY</a></button>
+        <button><a href="{% url 'fihirana_2_list' %}">FIHIRANA FAHAROA</a></button>
+        <button><a href="{% url 'fihirana_ajout_list' %}">FIHIRANA FANAMPINY</a></button>
+    </div>
+        {% block content_fihirana %}
+        
+        {% endblock %}
+    </div>
+{% endblock %}

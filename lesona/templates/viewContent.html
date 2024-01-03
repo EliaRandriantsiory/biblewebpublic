@@ -1,0 +1,28 @@
+{% extends 'lesonaHome.html' %}
+{% block lesonaContent %}
+<h4>{{title}} <a href="{% url 'ajoutContentLesona' title %}">Ajouter </a></h4>
+
+<div>
+    {% for sousTitre in sousTitres %}
+    
+        {% if sousTitre.titre == title %}
+        <div>
+        <Strong>{{sousTitre.sousTitre}} <a href="{% url 'ajoutContentLesona' sousTitre.sousTitre %}">Modifier </a></Strong>
+            {% for content in contents %}
+            {% if content.sousTitre == sousTitre %}
+                <div>
+                    <Strong>{{content.tokoSyAndininy}} </Strong>
+                    <div>{{content.fanazavana}}</div>
+                </div>
+            {% endif %}
+        {% endfor %}    
+    </div>
+            
+        {% endif %}
+    
+       
+    {% endfor %}
+    
+    
+
+{% endblock %}

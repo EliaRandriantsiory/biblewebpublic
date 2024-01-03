@@ -1,0 +1,27 @@
+Matio	Matthieu
+Marka	Marc
+Lioka	Luc
+Jaona	Jean
+Asa	Actes_des_Apotres
+Romana	Romains
+IKorintiana	1 Corinthiens
+IIKorintiana	2 Corinthiens
+Galatiana	Galates
+Efesiana	Ephésiens
+Filipiana	Philippiens
+Kolosiana	Colossiens
+ITesaloniana	1 Thessaloniciens
+IITesaloniana	2 Thessaloniciens
+ITimoty	1 Timothée
+IITimoty	2 Timothée
+Titosy	Tite
+Filemona	Philémon
+Hebreo	Hébreux
+Jakoba	Jacques
+IPetera	1 Pierre
+IIPetera	2 Pierre
+IJaona	1 Jean
+IIJaona	2 Jean
+IIIJaona	3 Jean
+Joda	Jude
+Apokalypsy	Apocalypse

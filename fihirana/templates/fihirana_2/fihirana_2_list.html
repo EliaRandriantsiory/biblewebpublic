@@ -1,0 +1,22 @@
+{% extends 'fihirana_base.html' %}
+{% block content_fihirana %}
+<div class="fihirana_faharoa">
+<h3>Fihirana 2</h3>
+<table border="1">
+    <!-- Boucle pour générer 10 lignes -->
+    {% for fhrn in list_fihirana_faharoa %}
+        {% if forloop.counter0|divisibleby:"4" %}
+            <tr> <!-- Commence une nouvelle ligne à chaque 4e élément -->
+        {% endif %}
+        <td><a href="{% url 'fihirana_2_view' fhrn.Range_file %}">{{fhrn.Range_file}}  {{fhrn.Titre}}</a></td> <!-- Affiche chaque élément dans une cellule -->
+        {% if forloop.counter|divisibleby:"4" or forloop.last %}
+            </tr> <!-- Ferme la ligne à chaque 4e élément ou pour le dernier élément -->
+        {% endif %}
+    {% endfor %}
+    
+</table>
+</div>
+<br>
+
+    
+{% endblock %}

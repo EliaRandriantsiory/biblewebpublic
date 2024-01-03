@@ -1,0 +1,55 @@
+{
+    "1": [
+        "1. He! Ny andon’ny maraina ",
+        "Latsaka ao an-tsaha re?",
+        "Ka mamelona ny maina?",
+        "Izay maniry rano be!"],
+        "1.1": [
+        "Ravoravo ê, ny tany",
+        "Fa he, ny andro maina efa lany ",
+        "Ka mitsahatra ny fahantrany ",
+        "Manaroka ny hazo be!"
+    ],
+    "2": [
+        "2\n",
+        "2. Ny fanahy karankaina \n",
+        "Misy rano velona \n",
+        "Fa Jesosy andon’aina \n",
+        "Manome fiainana \n"],
+        "2.1": [
+        "Velona ny jentilisa ",
+        "Ny tany hay dia tonga paradisa ",
+        "Marobe no efa voaisa ",
+        "Handray ny lova masina"
+    ],
+    "3": [
+        "3\n",
+        "3. Misy làlana mizotra \n",
+        "Izay mankao Ziona re\n",
+        "Any no mitanjozotra,\n",
+        "Ny vahiny marobe\n"],
+        "3.1": [
+        "Ka Ziona dia mivoha ",
+        "Hidiranan’ny navotan’ny Tsitoha",
+        "Ao no ivorian’ny mifoha ",
+        "Fa an’ny Tompo lehibe"
+    ],
+    "4": [
+        "4\n",
+        "4. He mikambana ny mino \n",
+        "Amim-pifaliambe\n",
+        "Ka ny hobiny maneno\n",
+        "Tahaka ny ranobe!\n"],
+        "4.1": [
+        "Ao mitovy avokoa \n",
+        "Tsy misy Tompo sy mpanompo koa\n",
+        "Eny, mpihavana iray tokoa ;\n",
+        "Ny mponina ao Ziona re!\n"
+    ],
+    "ord": [
+        "1","1.1",
+        "2","2.1",
+        "3","3.1",
+        "4","4.1"
+    ]
+}

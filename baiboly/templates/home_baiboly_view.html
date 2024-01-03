@@ -1,0 +1,14 @@
+{% extends 'home_baiboly.html' %}
+{% block content_view %}
+<form method="post">
+    {% csrf_token %}
+    <div>{{titre}} <span></span> </div>
+    <textarea name="content_bible" id="content_bible" cols="30" rows="10">
+        {% for content in contents %}
+        {{content}}
+        {% endfor %}
+    </textarea>
+    <input type="submit" value="Sauvegarder">
+
+</form>
+{% endblock %}

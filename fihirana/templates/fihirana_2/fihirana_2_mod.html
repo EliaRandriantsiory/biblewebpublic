@@ -1,0 +1,38 @@
+{% extends 'fihirana_base.html' %}
+{% block content_fihirana %}
+
+    <div class="content-description" style="margin: 15px;">
+    </div>
+
+    <div class="tri">
+        <label for="content-body">Mode de trie</label>
+        <label for="content-body"><strong>{{titre}}</strong></label>
+        <label for="content-body"><li>Mode d'affichage</li></label>
+    </div>
+    <div class="content-body">
+      <form method="post" style="align-items: center; padding: 15px;">
+        {% csrf_token %}
+        <div class="title">
+          <div><label for="">Titre : </label><input type="text" name="Title" value="{{titre}}"> , Clés: </label><input type="text" name="cles" value="{{cles}}"></div>
+          
+        </div>
+        <div class="content">
+          <div><label for="content_file">Content : </label></div>
+        <textarea name="content_file" class="text_area" cols="50" rows="15"style="
+        
+        resize: vertical; border: 2px solid #ccc;
+        
+        font-family: 'Arial', sans-serif;
+        
+        font-size: 18px;
+        
+    ">{% for ctn,v in contents.items %}{% for value in v %}{{value}}{% endfor %}{% endfor %}</textarea>
+
+        <div><label for="ord_diff">Ordre dif : </label></div><div><textarea name="ord_dif" id="" class="text_area" cols="50" rows="2">{{ord_dif}}</textarea></div>
+        <input type="submit" value="Soumettre">
+      </form>
+    </div>
+    <div class="content-footer">
+        
+    </div>
+{% endblock %}

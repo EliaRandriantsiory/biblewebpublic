@@ -1,0 +1,19 @@
+{
+    "scrn1": [
+        "MS Mincho",
+        40
+    ],
+    "scrn2": [
+        "MS Shell Dlg 2",
+        60,
+        "nature2"
+    ],
+    "scrn2_baiboly": [
+        34,
+        180
+    ],
+    "scrn2_label_size":[
+        1300,
+        665
+    ]
+}

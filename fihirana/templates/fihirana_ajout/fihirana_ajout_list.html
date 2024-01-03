@@ -1,0 +1,17 @@
+{% extends 'fihirana_base.html' %}
+{% block content_fihirana %}
+<h3>Fihirana fanampiny </h3><a href="{% url 'fihirana_ajout_sauvegarde' %}">Hampiditra hira</a>
+<table border="1">
+    <!-- Boucle pour générer 10 lignes -->
+    {% for fhrn in list_fihirana_fanampiny %}
+        {% if forloop.counter0|divisibleby:"4" %}
+            <tr> <!-- Commence une nouvelle ligne à chaque 4e élément -->
+        {% endif %}
+        <td><a href="{% url 'fihirana_ajout_view' fhrn.id %}">{{fhrn.Titre}}</a></td> <!-- Affiche chaque élément dans une cellule -->
+        {% if forloop.counter|divisibleby:"4" or forloop.last %}
+            </tr> <!-- Ferme la ligne à chaque 4e élément ou pour le dernier élément -->
+        {% endif %}
+    {% endfor %}
+    
+</table>
+{% endblock %}

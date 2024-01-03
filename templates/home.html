@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/viewdetail.css' %}">
+    
+<title>Document</title>
+</head>
+<body>
+    <header>
+<h3><a href="{% url 'index' %}">Bible</a></h3>
+        <div class="auth">
+            {% if user.is_authenticated %}
+            <a href="{% url 'profil_utilisateur' %}"><strong>{{ user.username }} </strong> </a>
+            <a href="{% url 'App_signout' %}">Déconnection</a>
+            {% else %}
+            <a href="{% url 'App_signin' %}">Se connecter</a>
+            <a href="{% url 'App_signup' %}">S'enregistrer</a>
+            {% endif %}</div>
+    </header>
+    {% block content_index %}
+    {% if user.is_authenticated %}
+    <a href="#"><strong>{{ user.username }} </strong> </a>
+    <a href="#">Acceuil</a>
+    {% else %}
+    <a href="{% url 'App_signin' %}">Se connecter</a>
+    <a href="{% url 'App_signup' %}">S'enregistrer</a>
+    {% endif %}
+	
+    {% endblock %}
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+</html>

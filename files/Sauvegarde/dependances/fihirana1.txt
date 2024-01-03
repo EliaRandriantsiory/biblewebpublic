@@ -1,0 +1,162 @@
+0	Bb	-2	Mangina, mangina
+1	Eb	3	Tsy misy tantara
+2	D	2	Misaotra ry Tompo Andriamanitra
+3	E	4	Ry Raiko ô, Mpamindra fo
+4	G	-5	Efa ivelomako tokoa Jeso
+5	D	2	Ny asa ambony indrindra
+6	C	0	Izao tontolo izao
+7	A	-3	Misy hery ao amin'ny Ràn'i Jeso
+8	A	-3	Omaly sy anio tsy miova Jeso
+9	Bb	-2	Nahafoy ny aiko Aho
+10	G	-5	Andriamanitra ô ! Midera Anao aho
+11	A	-3	Tsy hamela ahy ho irery Jeso
+12	Ab	-4	Tsaroako anio Jeso ny fanavotanao
+13	D	2	Avia miondreha
+14	Bb	-2	Avia ry vazan-tany ô !
+15	Ab	-4	Saotra atolotro Anao re ry Raiko
+16	A	-3	Ho hirako tokoa ry Ray
+17	F	5	Tsaroanay tokoa izao
+18	C	0	Tsara indrindra
+19	Eb	3	Tsy takatry ny saiko akory
+20	Eb	3	He ampy ahy izao
+21	D	2	Miara-mandeha Aminao hatrizao
+22	Bb	-2	Mamafaza voa 
+23	C	0	Lazao ’lay tantaran'ny Vonjy
+24	A	-3	Endrey ny hamaroan'ny soa
+25	G	-5	Ray ô ! An-tànanao
+26	Bb	-2	Jesosy ô ! Arotsahy
+27	D	2	Sambasamba Ray Nahary
+28	Bb	-2	Fitiavana rano velona
+29	E	4	Voninahitra anie
+30	Bb	-2	He YHWH no Mpiandry ahy
+31	Bb	-2	Mivory eto izahay
+32	Eb	3	Tsara lova ry Jeso ô !
+33	Eb	3	Dera laza, hery haja
+34	D	2	Feo mamatonalina
+35	Ab	-4	Jeso no anjara soa
+36	G	-5	Indro ny Tompo Jesosy jereo
+37	F	5	Tsy mba lavitra Jeso akory
+38	Ab	-4	Toy ny rano
+39	Eb	3	Endrey ambony loatra
+40	C	0	Mandrosoa izao ry miaramila soa
+41	Ab	-4	Izao no hirantsika
+42	D	2	Mamin'ny foko
+43	C	0	Jeso Mpanjaka malaza
+44	F	5	Jeso Tompo Lehlbe
+45	E	4	Endrey. mba mahaflnaritra loatra
+46	Eb	3	O ! Mivoha
+47	C	0	Ry Tompo Andriamanitra Andr/hary
+48	Eb	3	Rehefa misaina
+49	Ab	-4	Ny Hasoavanao
+50	G	-2	Moa ve tsy ho lazaiko
+51	C	0	Tafatsangana tokoa
+52	Ab	-4	Jlro mazava
+53	Eb	3	Raha tonya anio ny Tompo
+54	C	0	Ry Fanahy Mpanazava
+55	Db	1	Reko androany
+56	Eb	3	Moa ve Jeso dia mihevitra
+57	Eb	3	Ampidino eto anio
+58	Ab	-4	Tokantrano sambatra
+59	C	0	Maty Jesosy nisolo ahy re
+60	Ab	-4	Fiadanana feno
+61	Bb	-2	Tiako ho re lalandava
+62	Bb	-2	Onja vaventy
+63	Ab	-4	O, mandrosoa ry mpanarato
+64	A	-3	Ry Jeso Masoandronay
+65	Ab	-4	Ny foko ry Mpamonjy
+66	C	0	Tompo malala
+67	A	-3	He sambatra aho Jeso
+68	G	-5	Inty, inty, inty aho Jeso
+69	G	-5	Inona no hahasaraka ahy
+70	Ab	-4	Jeso mora fo indrindra
+71	Bb	-2	Ry Raiko feno antra
+72	C	0	Tiako ny miaraka Aminao
+73	Bb	-2	Mihoby ny Fanahiko
+74	Eb	3	Jeso hany fiereko
+75	Bb	-2	Midera ny Anaranao
+76	Eb	3	Eo Aminao ry Mpamonjy malala
+77	C	0	Jeso natsangana
+78	F	5	Endrika sariaka
+79	F	5	Jesosy no asandratro
+80	Bb	-2	Ny fiainan’ny lanitra ambony
+81	Eb	3	Ny eo akaikinao ry Ray
+82	E	4	Anao ny laza
+83	F	5	Efa anananao ve ?
+84	A	-3	He mamiko indrindra
+85	C	0	Moa ho haiko tantaraina
+86	Ab	-4	Efa akaiky ilay andro malaza
+87	A	-3	Omany ny fanilo
+88	C	0	Raha mandia làlan-tsarotra
+89	E	4	Hianao Fanahy Masina ô !
+90	Eb	3	Ny Teninao rehetra
+91	G	-5	Antsoy Jeso
+92	E/C	3	Njay reko Tompo ô I
+93	F	5	'Lay ora tao Getsemane
+94	G	-5	Aina no fetra
+95	B6	2	Raha re ny feon'i Jeso tia
+96	A	-3	Madiva ho lasa ny andro
+97	G	-5	Ny Mpamonjy no mitady fihavanana
+98	E	4	’Zaho tena tia Anao Jeso
+99	Bb	-2	Endrey ny faniriako
+100	F	6	Tompo ô ! Ovay ny foko
+101	C	0	Misy didy tena tsara
+102	Eb	3	Jeso be fitia
+103	F	5	Reko izao ny feon'ny Tompo
+104	Db	1	Sintony aho
+105	C	0	O I Aza matahotra
+106	Eb	3	Ny Ràn'ny Zanak'Ondry latsaka
+107	A	-3	Manana latabatra
+108	Eb	3	Loharano
+109	Eb	3	Rehefa antsoina ny Anarana
+114	F	5	Tsy misy atsnorako
+115	C	0	He ! Misy Anarana iray
+116	F	5	Isaorana ny Tompo
+117	G	-5	Afaka aho
+118	A	-3	Jesosy Tompoko tsy miova
+119	C	0	Feno fiderana Anao
+120	A	-3	Fanavaozana izay mahagaga
+121	Eb	3	Misy maro ao an-tsaha mitaraina
+122	Eb	3	Feno hafaliana ny ao an-danitra
+123	F	5	Tsy misy soa ho ahy afa-tsy Jeso
+124	G	-5	Manova zavatra ny finoana
+125	G	-5	Mazava sy mamiratra
+126	Eb	3	Tompo ô ! An-tànanao tokoa
+127	Eb	3	Mihainoa Jeso ô !
+128	F	5	Mandresy aho
+129	G	-5	Asandratro ny tànako
+130	Bb	-2	Andriamanitra he mahagaga
+131	Bb	-2	Fenoy Tompo
+132	C	0	Ahy Jeso ahy Izy
+133			Efa an'i Jeso ny fiainako
+134	A	-3	Apetrako
+135	D	2	Andriamanitra fitiavana
+136	D	2	Enga anie ka homba anao Jeso
+137	D	2	He ! Ny andon'ny maraina
+138	Bb	-2	Ry Jeso ny fitiavanao
+139	Ab	-4	Ampy ahy Jeso
+140	C	0	Moa ve vita fihavanana
+141	G	-5	Tsy hainay ny hangina
+142	F	5	Jeso vato fehizoro
+143	Ab	-4	Tompo malala
+144			Misy tany mahafaly
+145	C	0	Famonjena azo antoka
+146	C	0	Yahveh ô ! Deraina Ianao
+147	F	4	Hankaiza izahay Jesosy ô !
+148			Ny miara-dia amin'i Jesosy
+149			Ny lapan'Andriamanitra
+150			Tamin'ny fo no tena ninoanay
+151	A	-3	Jesosy reharehako
+152			Ny sitrakao no sitrako
+153			Mifankatiava tsara
+154			Ny lisy any an-dohasaha
+155			Ilay fonenana iray
+156			Fantatro izay inoako
+157			Ekeko Tompo ô ! Izay itarihanao ahy
+158			He ! Mifalia ry tany ô I
+159			Midera Anao izao
+160			Manana sakaiza
+161			Sambatra. sambatra
+162			Moa Jesosy ve tsy ahy ?
+163			Ingao re ny dia
+164			Antema fiderana
+165	Ab	-4	Fanatitra velona

@@ -1,0 +1,25 @@
+{% extends 'home.html' %}
+
+{% block content_index %}
+
+<h1>S'authentifier</h1>
+<form method="POST">
+    {% csrf_token %}
+    <div>
+        <p> 
+            <label for="username">Nom d'utilisateur</label>
+            <input type="text" id="username" name="username">
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="password">Mot de pass</label>
+            <input type="password" id="password" name="password">
+        </p>
+    </div>
+    <div>
+        <button type="submit">Se connecter</button>
+    </div>
+</form>
+
+{% endblock %}

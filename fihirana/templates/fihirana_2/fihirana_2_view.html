@@ -1,0 +1,24 @@
+{% extends 'fihirana_base.html' %}
+{% block content_fihirana %}
+
+    <div class="content-description" style="margin: 15px;">
+        
+    </div>
+
+    <div class="tri">
+        <label for="content-body">Mode de trie</label>
+        <label for="content-body"><strong>{{titre}} <a href="{% url 'modfihirana_2_mod' laharana titre %}"> (Cliquer ici pour modifier)</a></strong></label>
+        <label for="content-body"><li>Mode d'affichage</li></label>
+    </div>
+    <div class="content-body">
+        <h4><strong>{{titre}} , Clés : {{cles}} </strong></h4>
+        {% for ctn in contents %}
+        <div>
+            {% for content in ctn %}
+                <div>{{content}} </div>
+            {% endfor %}
+        </div><br>
+        {% endfor %}
+    </div>
+    
+{% endblock %}

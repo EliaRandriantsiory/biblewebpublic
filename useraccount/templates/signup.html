@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+
+{% block content_index %}
+
+<h1>INSCRIPTION</h1>
+<form method="POST">
+    {% csrf_token %}
+    <div>
+        <p>
+            <label for="username">Nom d'utilisateur</label>
+            {{form.username}}
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="password1">Mot de pass</label>
+            {{form.password1}}
+        </p>
+    </div>
+    <div>
+        <p>
+            <label for="password2">Confirmation Mot de pass</label>
+            {{form.password2}}
+        </p>
+    </div>
+    <div>
+        <button type="submit">S'inscrire</button>
+    </div>
+</form>
+
+{% endblock %}

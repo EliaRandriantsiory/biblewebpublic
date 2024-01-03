@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block content %}
+<a href="{% url 'listLesona' %}"><h3>AZO ANTOKA NY FANAVOTANA AO AMIN’I KRISTY JESOSY</h3></a>
+<div>
+    {% block lesonaContent %}
+    <div><a href="{% url 'listLesona' %}">Ireo lesona</a></div>
+    {% endblock %}
+
+</div>
+
+{% endblock %}

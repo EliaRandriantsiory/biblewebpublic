@@ -1,0 +1,27 @@
+{% extends 'fihirana_base.html' %}
+{% block content_fihirana %}
+
+    <div class="content-description" style="margin: 15px;">
+        
+    </div>
+
+    <div class="tri">
+        <label for="content-body">Mode de trie</label>
+        <label for="content-body"><strong>{{titre}}<a href="{% url 'fihirana_ajout_mod' id %}"> (Cliquer ici pour modifier)</a></strong></label>
+        <label for="content-body"><li>Mode d'affichage</li></label>
+    </div>
+    <div class="content-body">
+        <h4><strong>{{titre}}</strong></h4>
+        {% for ctn in contents %}
+    <div>
+        {% for cttn in ctn %}
+            <div>{{cttn}}</div>
+        {% endfor %}        
+    </div><br>
+    {% endfor %}
+        
+    </div>
+    <div class="content-footer">
+        <button>Sokafana manontolo</button>
+    </div>
+{% endblock %}

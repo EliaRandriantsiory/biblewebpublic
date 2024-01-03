@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block content_index %}
+	
+	<div class="type">
+        
+        <a href="{% url 'indexLesona' %}"><button>Fampianarana</button></a>
+		<a href="{% url 'Home_baiboly' %}"><button>Baiboly</button></a>
+        <a href="{% url 'Home_fihirana' %}"><button >Fihirana</button></a>
+	</div>
+    {% block content %}
+    {% endblock %}
+{% endblock %}

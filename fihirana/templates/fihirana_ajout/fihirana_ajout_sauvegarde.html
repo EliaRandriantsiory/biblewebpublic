@@ -1,0 +1,44 @@
+{% extends 'fihirana_base.html' %}
+{% block content_fihirana %}
+
+    <div id="myoverlayconfirmation" class="overlay-confirmation">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+
+    </div>
+
+
+    <div class="content-fihirana-ajout">
+        <div class="tri">
+            <label for="content-body">Mode de trie</label>
+            <label for="content-body"><strong>Ajout Fihirana</strong></label>
+            <label for="content-body"><li>Mode d'affichage</li></label>
+        </div>
+        <div class="content-body">
+        <form method="post" style="align-items: center; padding: 15px;">
+            {% csrf_token %}
+            <div class="content-body-header">
+                <label for="titre">Lohateny</label><br>
+                <input type="text" name="titre">
+            </div>
+            <div class="content-body-content">
+                <label for="content_file">Tonon-kira</label><br>
+                <textarea name="content_file" class="text_area" cols="50" rows="15"style="
+                
+                resize: vertical; border: 2px solid #ccc;
+                
+                font-family: 'Arial', sans-serif;
+                
+                font-size: 18px;
+                
+            ">{% for ctn,v in contents.items %}{{ctn}}
+        {% for value in v %}{{value}}{% endfor %}{% endfor %}</textarea>
+            </div>
+            <div><label for="ord_diff">Ordre dif : </label></div><div><textarea name="ord_dif" id="" class="text_area" cols="50" rows="2">{{ord_dif}}</textarea></div>
+            <input type="submit" value="Visualiser">
+        </form>
+        </div>
+        <div class="content-footer">
+            
+        </div>
+    </div>
+{% endblock %}

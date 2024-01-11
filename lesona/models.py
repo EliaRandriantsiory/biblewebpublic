@@ -7,6 +7,7 @@ class lesona(models.Model):
 class sousTitre(models.Model):
     sousTitre = models.CharField(max_length=1000,blank=True,null=True)
     titre = models.ForeignKey(lesona, on_delete=models.CASCADE,blank=True,null=True)
+    
     def __str__(self) :
         if self.sousTitre == None:
             return "-"

@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth import get_user_model, login, logout, authenticate
+from django.contrib.auth.decorators import permission_required
 from django.contrib import messages
 from .forms import *
 from baiboly.views  import home
@@ -23,8 +24,16 @@ def telecharge_fichier(request):
     
     backup_file = f'db_out'
     backup_file_=f"{backup_file}.sqlite3"
-    export_files_in_database(backup_file)
-    backup_path = f"{current_link}//{backup_file}.sqlite3"  
+    #
+    
+    if os.path.exists(f"{current_link}//{backup_file}.sqlite3"):
+        backup_path = f"{current_link}//{backup_file}.sqlite3"  
+        os.remove(backup_path)
+        export_files_in_database(backup_file)
+        backup_path = f"{current_link}//{backup_file}.sqlite3"  
+    else:
+        export_files_in_database(backup_file)
+        backup_path = f"{current_link}//{backup_file}.sqlite3"  
     
     with open(backup_path, 'rb') as f:
         response = HttpResponse(f.read(), content_type='application/x-sqlite3')

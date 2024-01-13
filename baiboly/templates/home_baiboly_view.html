@@ -3,7 +3,8 @@
 <form method="post">
     {% csrf_token %}
     <div>{{titre}} <span></span> </div>
-    <textarea name="content_bible" id="content_bible" cols="30" rows="10">
+    <textarea name="content_bible" id="content_bible" cols="30" rows="10" style="align-items: center;display: flex;align-items: center;
+    justify-content: center; font-size: 35px;">
         {% for content in contents %}
         {{content}}
         {% endfor %}

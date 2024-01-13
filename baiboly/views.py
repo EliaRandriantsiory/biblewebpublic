@@ -10,6 +10,7 @@ class baiboly_G():
         for content in listContent:
             #print(type(content))
             content = str(content).replace("YHWH ","Yaveh ")
+            content = content.replace("YHWH","Yaveh")
             #print(content)
             contents.append(content)
         

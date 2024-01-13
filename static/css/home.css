@@ -72,3 +72,9 @@ header{
 .hiden{
     display: none;
 }
+div .type{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

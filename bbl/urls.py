@@ -48,7 +48,10 @@ urlpatterns = [
     #LESONA
     path('Fampianarana/', indexLesona, name='indexLesona'),
     path('Lesona/', listLesona, name='listLesona'),
-    path('Mijerylesona/<str:title>/', ajoutContent, name='ajoutContentLesona'),
-    path('Mijery lesona/<str:title>/', viewContent, name='viewContentLesona'),
+    path('Mijerylesona/<int:title>/', ajoutContent, name='ajoutContentLesona'),
+    path('Mijery lesona/<int:title>/', viewContent, name='viewContentLesona'),
+    
+    
+    
     
 ]

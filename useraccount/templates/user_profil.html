@@ -1,6 +1,13 @@
 {% extends 'home.html' %}
 {% block content_index %}
 <h3>bonjour: {{ user.username }} </h3>
-<li><a href="#">information sur les base de données</a></li>
-<li><a href="{% url 'telecharger_BD' %}">Faire un exportation de base de données</a></li>
+<ul>Votre status sont:
+    <ul>
+        <li><a href="#">Historique </a></li>
+        <li><a href="#">information sur les base de données </a></li>
+        <li><a href="{% url 'telecharger_BD' %}">Faire un exportation de base de données</a></li>
+    </ul>
+</ul>
+
+
 {% endblock %}

@@ -1,8 +1,9 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render,redirect,HttpResponse
 from .models import *
 
 def indexLesona(request):
     return render(request, "lesonahome.html")
+
 
 def listLesona(request):
     titreLesona = lesona.objects.all()
@@ -17,41 +18,70 @@ def viewContent(request, title):
     
     try:
         #print(title)
-        titrelesona=lesona.objects.get(Titre=title)
+        titrelesona=lesona.objects.get(id=title)
         
-        subtitle = sousTitre.objects.all()
+        subtitles = []
         contentt=fanazavana.objects.all()
         #subTitle = fanazavana.objects.get(sousTitre=sousTitre.objects.get(titre=titre))
-        print(subtitle)
-        print(contentt)
-        print(titrelesona)
+        for subTitle in sousTitre.objects.all():
+            if subTitle.titre == titrelesona:
+                subtitles.append(subTitle)
+                
+        # print("subtitle: ",subtitles)
+        # print("contentt: ",contentt)
+        # print("titrelesona: ",titrelesona)
         
-        context={"title":titrelesona,"sousTitres":subtitle,"contents":contentt}
+        context={
+            "title":titrelesona,
+            "currentSubtitle":"",
+            "sousTitres":subtitles,
+            "contents":contentt
+            }
         return render(request,'viewContent.html',context)
     except:
-        print(title)
-        fanazavanacontent= fanazavana.objects.get(sousTitre=sousTitre.objects.get(sousTitre=title))
-        context={"title":title,"content":fanazavanacontent}
+        print(sousTitre.objects.get(id=title))
+        
+        subtitle = sousTitre.objects.get(id=title)
+        
+        descriptions=[]
+        subtitles=[]
+        for description in fanazavana.objects.all():
+            if description.sousTitre == subtitle:
+                descriptions.append(description)
+                
+        for subTitle in sousTitre.objects.all():
+            if subTitle.titre == subtitle.titre:
+                subtitles.append(subTitle)
+        
+        context={
+            "title":subtitle.titre,
+            "currentSubtitle":subtitle,
+            "sousTitres":subtitles,
+            "contents":fanazavana.objects.all()
+            }
         return render(request,'viewContent.html',context)
+        
 
 def ajoutContent(request, title):
     #print(title)
     try:
-        lesona.objects.get(Titre=title)
+        titlle=lesona.objects.get(id=title)
+        print("titre",titlle.Titre)
         if request.method == "POST":
                 soustitre = request.POST.get("soustitre")
                 content = request.POST.get("soustitreContent")
                 tokoSyAndininy = request.POST.get("tokoSyAndininy")
                 if sousTitre != "":
-                    subTitle = sousTitre(sousTitre=soustitre,titre=lesona.objects.get(Titre=title))
+                    subTitle = sousTitre(sousTitre=soustitre,titre=lesona.objects.get(id=title))
                     subTitle.save()
                 ctnt= fanazavana(fanazavana=content,tokoSyAndininy=tokoSyAndininy,sousTitre=sousTitre.objects.get(soustitre=soustitre))
                 ctnt.save()
             
                 return redirect("listLesona")
-        context={"title":title,"etat":True}
+        context={"title":titlle.Titre,"etat":True}
         return render(request,"ajoutContent.html",context)
     except:
+        sub=sousTitre.objects.get(id=title)
         
         if request.method == "POST":
             content = request.POST.get("soustitreContent")
@@ -64,7 +94,7 @@ def ajoutContent(request, title):
             #     ctnt.save()
             # form.save()
             return redirect("listLesona")
-        sub=sousTitre.objects.get(sousTitre=title)
+        sub=sousTitre.objects.get(id=title)
         context={"title":sub,"etat":False}
         return render(request,"ajoutContent.html",context)
         

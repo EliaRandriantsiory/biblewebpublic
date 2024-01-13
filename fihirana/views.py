@@ -362,6 +362,7 @@ class fihirana_G:
             "3.1",
             "4.1",
             "5.1",
+            "Isan'andininy:",
             "Isan'andininy.1",
             "Isan'andininy.2",
             "Isan'andininy.3",
@@ -411,7 +412,7 @@ class fihirana_G:
             "isan'andininy",
             "Isan'andininy2",
             "Isan’andininy: (Bis)",
-            "",
+            
             "Isan’andininy: ",
             "Isan’andininy : (in 2)",
             "Isan’andininy :",
@@ -530,7 +531,6 @@ class fihirana_G:
             else:
                 pass
         return dt
-
 
 def index_fihirana(request):
     return render(request, "fihirana_base.html")
@@ -651,16 +651,18 @@ class fihiranaFanampiny:
     def fihirana_ajout_sauvegarde(request):
         if request.method == "POST":
             titre = request.POST.get("titre")
+            mpihira=request.POST.get("mpihira")
             fhrn_modi = request.POST.get("content_file")
             ord_dif = request.POST.get("ord_dif")
+            
 
             fl = fihirana_G.export_fihirana_ajout_to_db(f"{fhrn_modi}\nfin")
             ord_dif_ = str(ord_dif).split(",")
 
             dt = fhrn_ajout(Titre=titre, content=fl, ord_dif=ord_dif_)
-
+            print(titre,mpihira,fhrn_modi,ord_dif)
             # dt_list=list_fihirana_ajout.objects.create(Titre=dt)
-            dt.save()
+            #dt.save()
             # dt_list.save()
 
             return redirect("fihirana_ajout_list")
@@ -703,6 +705,10 @@ class fihiranaFanampiny:
 
     def fihirana_ajout_list(request):
         list_fhrn_fanampiny = fhrn_ajout.objects.all()
+        listhira=["zama","naivo","ketaka","rakoto","aina"]
+        print(listhira)
+        
+        
         context = {"list_fihirana_fanampiny": list_fhrn_fanampiny}
         return render(request, "fihirana_ajout\\fihirana_ajout_list.html", context)
 

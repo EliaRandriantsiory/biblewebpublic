@@ -14,6 +14,7 @@ User = get_user_model()
 current_link=os.getcwd()
 
 def User_profils(request):
+    
     return render(request, 'user_profil.html')
 
 def telecharge_fichier(request):   
@@ -38,6 +39,7 @@ def telecharge_fichier(request):
     with open(backup_path, 'rb') as f:
         response = HttpResponse(f.read(), content_type='application/x-sqlite3')
         response['Content-Disposition'] = f'attachment; filename={backup_file_}'
+    os.remove(backup_path)
     return response
    
 def Appsignup(request):

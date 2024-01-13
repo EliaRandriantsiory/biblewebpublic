@@ -44,6 +44,7 @@ class fhrn_mod(models.Model):
     
 class fhrn_ajout(models.Model):
     Titre=models.CharField(max_length=1000)
+    Mpihira=models.CharField(max_length=1000,null=True,blank=True)
     content=models.TextField()
     ord_dif=models.CharField(max_length=1000)
     date=models.DateTimeField(auto_now_add=True)
@@ -51,7 +52,8 @@ class fhrn_ajout(models.Model):
     Transpose = models.IntegerField(null=True,blank=True)
     Range_file=models.IntegerField(null=True,blank=True)
     def __str__(self) :
-        return self.Titre
+        if self.Mpihira !="":
+            return f"{self.Titre} ({self.Mpihira}) "
     
 class list_fihirana_ajout(models.Model):
     Titre=models.CharField(max_length=1000)

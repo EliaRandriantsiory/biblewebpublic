@@ -2,11 +2,11 @@
 {% block lesonaContent %}
 
     {% for title in titreLesona %}
-    <a href="{% url 'viewContentLesona' title %}">{{title}}</a>
+    <a href="{% url 'viewContentLesona' title.id %}">{{title}} </a>
      <div>
         {% for subtitle in soustitre %}
         {% if subtitle.titre == title %}
-        <a href="{% url 'viewContentLesona' subtitle %}">
+        <a href="{% url 'viewContentLesona' subtitle.id %}">
             <li>{{subtitle}}</li>
         </a>
 
